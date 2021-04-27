@@ -22,9 +22,11 @@
     </thead>
     <tbody>
       <tr>
-        <td>Date</td>
-        <td>Weight</td>
-        <td >Body Fat %</td>
+        <!-- Instead of using hard-coded data we're going to do a little bit
+            of data binding and bring in the data from that service. -->
+        <td>{{entriesService.sortedEntries[0].date}}</td>
+        <td>{{entriesService.sortedEntries[0].weight}}</td>
+        <td >{{entriesService.sortedEntries[0].bodyfat}}</td>
       </tr>
     </tbody>
   </table>

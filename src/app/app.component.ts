@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WeightEntriesService } from './weigth-entries.service';
 
 
 @Component({
@@ -8,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  
-  constructor() {}
+  // inject the service (as parameter) into constructor
+  constructor(public entriesService: WeightEntriesService) {}
 
   ngOnInit() {
   }
